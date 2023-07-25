@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf/8"/>
+ <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+ <link rel="stylesheet" href="style.css" type="text/css"/>
+<link rel="stylesheet" href="fontawesome-free-5.11.2-web (1)\fontawesome-free-5.11.2-web\css\all.css" type="text/css"/>
+ 
+ <title>ATM Machine</title>
+</head>
+ <div class="main-container">
+  <div>
+   <div class="name"><h1 class="name-b" id=>Central Bank</h1></div>
+   <div class="main">
+    <img src="data:image/png;base64,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" width="100%" height="400px"/>
+    
+    <div class="pas" id="pas" style="display:block">
+    <div><h1 class="heading head1" id="pinHeading">Please Enter Your Pin</h1></div>
+    <div id="pinDiv" style="display:;">
+    <input type="password" id="pin1" placeholder="" class="pin" maxlength="4"/>
+    <button class="btnOK" id="btnEnter">Enter</button>
+    </div>
+    <div class="trans"><h3 id="pinMsg" class="heading head1" style="color:red"></h3></div>
+    </div>
+    <div class="buttons" style="display:none" id="btnsSecreen">
+     <div><h1 class="heading">Please Select Your Desired Transactions</h1></div>
+    <div class="buttons-left">
+      <button class="btn" id="withdarawal"><h1 class="btn-text"><i style="font-size:21px;margin-right:10px; color:white" class="fas fa-caret-right"></i>Cash Withdrawal</h1></button>
+      <button class="btn" id="billPay"><h1 class="btn-text"><i style="font-size:21px;margin-right:10px; color:white" class="fas fa-caret-right"></i>Bill Payment</h1></button>
+      <button class="btn" id="ballanceInquiry"><h1 class="btn-text"><i style="font-size:21px;margin-right:10px; color:white" class="fas fa-caret-right"></i>Ballance Inquiry</h1></button>
+      
+     </div>
+     <div class="buttons-right">
+      <button class="btn" id="transfer"><h1 class="btn-text"><i style="font-size:21px;margin-right:10px; color:white" class="fas fa-caret-right"></i>Transfer</h1></button>
+      <button class="btn" id="deposit"><h1 class="btn-text"><i style="font-size:21px;margin-right:10px; color:white" class="fas fa-caret-right"></i>Deposit</h1></button>
+      <button class="btn" id="Exit"><h1 class="btn-text"><i style="font-size:21px;margin-right:10px; color:white" class="fas fa-caret-right"></i>Exit</h1></button>
+       
+      
+     </div>
+    </div>
+    <div class="transcations" id="transactions" style="display:none">
+     
+     <div class="trans"><h1 id="firstText" class="heading head1"></h1></div>
+     
+     <div id="amounts" style="display:">
+     <input id="amountIn" type="number"  placeholder="" class="pin" />
+     <button class="btnOK" id="btnOK"><span id="num">$</span></button>
+     </div>
+     <div class="trans"><h3 id="secondText" class="heading head1"></h3></div>
+     <div class="trans"><h3 class="heading head1" id="amount"></span></h3></div>
+     <div class="trans"><a id="lin1" href="#"><h3 class="heading head1" id="back">Back to main secreen</h3></a></div>
+    </div>
+    <div class="transcations" id="billPayDiv" style="display:none">
+     
+     <div class="trans"><h1 id="firstText2" class="heading head1"></h1></div>
+     <div id="ref" style="display:block">
+     <input id="reffIn" type="number"  placeholder="" class="pin" />
+     <button class="btnOK" id="btnReff"><span id="num">Enter</span></button>
+     </div>
+     <div id="billIn" style="display:none">
+     <input id="amountIn2" type="number"  placeholder="" class="pin" />
+     <button class="btnOK" id="btnOK2"><span id="num">$</span></button>
+     </div>
+     <div class="trans"><h3 id="secondText2" class="heading head1"></h3></div>
+     <div class="trans"><h3 class="heading head1" id="amount2"></span></h3></div>
+     <div class="trans"><a id="lin2" href="#"><h3 class="heading head1" id="back">Back to main secreen</h3></a></div>
+    </div>
+    
+    
+   </div>
+    </div>
+ </div>
+ <script>
+   let totalAmount=20000;
+  
+  let withdarawalBtn=document.getElementById('withdarawal');
+  let billPay=document.getElementById('billPay');
+  let ballanceInquiryBtn=document.getElementById('ballanceInquiry');
+  let ref=document.getElementById('ref');
+  let btnReff=document.getElementById('btnReff');
+  
+  let transferBtn=document.getElementById('transfer');
+  let depositBtn=document.getElementById('deposit');
+  let otherTransaction=document.getElementById('otherTransaction');
+  let firstText=document.getElementById('firstText');
+ let firstText2=document.getElementById('firstText2');
+  let Exit=document.getElementById('Exit');
+ let btnOK=document.getElementById('btnOK');
+ let btnOK2=document.getElementById('btnOK2');
+ let amounts=document.getElementById('amounts');
+  let secondText=document.getElementById('secondText');
+  let secondText2=document.getElementById('secondText2');
+  let amount=document.getElementById('amount');
+  let amount2=document.getElementById('amount2');
+  let doubleTransactions=document.getElementById('doubleTransactions');
+  let  amountIn=document.getElementById('amountIn').value;
+  let back=document.getElementById('back');
+  let lin1=document.getElementById('lin1');
+  let lin2=document.getElementById('lin2');
+  let transactions=document.getElementById('transactions');
+  let btnsSecreen=document.getElementById('btnsSecreen');
+     let pin1=document.getElementById('pin1').value;
+  let btnEnter=document.getElementById('btnEnter');
+  let pas=document.getElementById('pas');
+  let num=document.getElementById('num');
+  let pinMsg=document.getElementById('pinMsg');
+  let billPayDiv=document.getElementById('billPayDiv');
+  let pinDiv=document.getElementById('pinDiv');
+  let pinHeading=document.getElementById('pinHeading');
+  withdarawalBtn.onclick=withdarawal;
+  
+  function withdarawal(){
+  
+  btnsSecreen.style.display="none";
+  transactions.style.display="block";
+  firstText.innerHTML="Please Enter Your Amount ";
+    
+  }
+  
+  btnOK.onclick=OK;
+  function OK(){
+  let  amountIn=document.getElementById('amountIn').value;
+  if(amountIn<totalAmount){
+  secondText.innerHTML="Transaction Succesed $"+amountIn;
+  amount.innerHTML="Remaining amount is $"+(totalAmount-amountIn);
+  back.innerHTML="Back to main secreen";}
+  else{
+  secondText.innerHTML="You have't enough credit";
+  amount.innerHTML="Your total ballance is $"+totalAmount;
+  back.innerHTML="Back to main secreen";}
+  
+  }
+  btnOK2.onclick=OK2;
+  function OK2(){
+  let  amountIn2=document.getElementById('amountIn2').value;
+  if(amountIn2<totalAmount){
+  secondText2.innerHTML="Transaction Succesed $"+amountIn2;
+  amount2.innerHTML="Remaining amount is $"+(totalAmount-amountIn2);
+  back.innerHTML="Back to main secreen";}
+  else{
+  secondText2.innerHTML="You have't enough credit";
+  amount2.innerHTML="Your total ballance is $"+totalAmount;
+  back.innerHTML="Back to main secreen";}
+  
+  }
+  
+  
+  lin2.onclick=Back;
+  function Back(){
+  billPayDiv.style.display="none";
+  billPayDiv.style.display="none";
+  btnsSecreen.style.display="block";
+  }
+  btnEnter.onclick=login;
+  function login(){
+  let pin1=document.getElementById('pin1').value;
+  
+   if(pin1==1234){
+    pas.style.display="none";
+    btnsSecreen.style.display="block";
+   
+   }
+   else{
+    pinMsg.innerHTML="**Password not matched";
+   
+   }
+  }
+  billPay.onclick=billPayment;
+  function billPayment(){
+  firstText2.innerHTML="Please Enter Bill Refference No";
+  btnsSecreen.style.display="none";
+  billPayDiv.style.display="block";
+  
+ 
+  }
+  
+  btnReff.onclick=change;
+  function change(){
+  ref.style.display="none";
+  billIn.style.display="block";
+  firstText2.innerHTML="Please Enter Your Total Bill";
+  
+  
+  }
+  
+  
+  
+  ballanceInquiry.onclick=billInquiry;
+  function billInquiry(){
+  btnsSecreen.style.display="none";
+  billPayDiv.style.display="none";
+  transactions.style.display="block";
+  ref.style.display="none";
+  amounts.style.display="none";
+  firstText.innerHTML="Ballance Inquiry";
+  secondText.innerHTML="Your Total Ballance is $"+totalAmount;
+  
+  }
+  transferBtn.onclick=transferMoney;
+  function transferMoney(){
+  transactions.style.display="none";
+  
+  btnsSecreen.style.display="none";
+  billPayDiv.style.display="block";
+  firstText2.innerHTML="Enter the account number";
+  
+  }
+  depositBtn.onclick=depositMoney;
+  function depositMoney(){
+  transactions.style.display="block";
+  btnsSecreen.style.display="none";
+  billPayDiv.style.display="none";
+  firstText.innerHTML="Enter your amount";
+  btnOK.onclick=function(){
+   let pin1=document.getElementById('pin1').value;
+   secondText.innerHTML="Succesfully Added $"+pin1;
+   amount.innerHTML="Your new ballance is $"+(totalAmount+Number(pin1));
+   
+  
+  }
+  
+  }
+  Exit.onclick=exit;
+  function exit(){
+  transactions.style.display="none";
+  billPayDiv.style.display="none";
+  btnsSecreen.style.display="none";
+  pas.style.display="block";
+  pinDiv.style.display="none";
+  pinHeading.innerHTML="Thankx for chosing us :)";
+  pinMsg.innerHTML="We don't compromise on client safety !";
+  
+  }
+  
+back.onclick=Back;
+  function Back(){
+  location.reload();
+  pas.style.display="block";
+  transactions.style.display="none";
+  billPayDiv.style.display="none";
+  
+  
+   
+ 
+  
+  }
+ 
+  
+  
+ 
+ </script>
+</body>
+</html>
